@@ -5,6 +5,8 @@ import ./make-test-python.nix (
       mode = "0640";
     };
   in {
+    names = "pppd";
+
     nodes = {
       server = {config, pkgs, ...}: {
         config = {
